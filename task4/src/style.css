@@ -1,0 +1,36 @@
+.title{
+    margin-top: 4vh;
+}
+
+.navbar-end {
+    width: 250px !important;
+
+}
+
+.navbar-item.buttonNav {
+    display: flex;
+    align-items: flex-start;
+}
+
+.buttons .button {
+    margin: 0 0 0 2vw; 
+}
+
+span.welcomeDashboard {
+    font-weight: 200;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+
+.ban{background-color: red;color: white;}
+
+img.iconBlock{    width: 30px !important;
+    height: 25px !important;}
+
+.marginleft{
+    margin-left: 2vw;
+}
