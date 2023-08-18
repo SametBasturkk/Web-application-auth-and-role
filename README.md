@@ -1,13 +1,16 @@
-# ItransitionTask4
 
-Use you language and platform: JavaScript/TypeScript+React+Node.js+Express+ MySQL/MongoDB OR Java+Spring+MySQL OR .NET/Core+C#+ASP.NET+SQL Server
-Create a Web application with registration and authentication.
-Non-authenticated users should not have access to the user management (admin panel).
-Authenticated users should have access the user management table: id, name, e-mail, last login time, registration time, status (active/blocked).
-The left column of the table should contains checkboxes without labels for multiple selection (table header contains “Select All” checkbox without label).
-There must be a toolbar over the table with the flooring actions: Block (red button with text), Unblock (icon), Delete (icon).
-You have to use a CSS framework (Bootstrap is recommended, but you can choose any CSS framework).
-Every users should be able to block or delete yourself or any other user.
-If user account is blocked or deleted any next user’s request should redirect to the login page.
-User can use any non-empty password (even one character).
-Blocked user should not be able to login, deleted user can re-register.
+## Description
+
+Welcome to the **User Management System**! This project is designed to manage user information, registration, login, banning, and removal operations. It provides a backend API service using Node.js and PostgreSQL to handle these functionalities.
+
+## Endpoints
+
+The User Management System offers the following API endpoints:
+
+1.  `GET /users`: Fetches a list of users with their details.
+2.  `POST /register`: Registers a new user with a username, password, and sets the ban status to "no".
+3.  `POST /login`: Allows a user to log in with a username and password. Updates the last login date.
+4.  `POST /usercheck`: Checks if a user exists and is not banned.
+5.  `POST /ban`: Bans user(s) by changing their ban status to "yes".
+6.  `POST /unban`: Unbans user(s) by changing their ban status to "no".
+7.  `POST /remove`: Removes user(s) from the system.
